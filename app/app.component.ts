@@ -26,11 +26,11 @@ export class AppComponent {
   public rows;
   public cols; 
   
-  private autoCreateColumns = 10;
-  private autoCreateRows = 10;
+  private autoCreateColumns = 5;
+  private autoCreateRows = 5;
   
-  private _colsInput = 15;
-  private _rowInput = 7; 
+  private _colsInput = 5;
+  private _rowInput = 5; 
   
   constructor(){
     this.rows = this.createIndexArray(this.rowInput);

@@ -15,11 +15,14 @@ export class AutoGridColumns {
       let grid : GridLayout = this.gridRef.nativeElement;
 
       grid.removeColumns();
-
+     
       for(let i =0; i<value; i++){
         console.log("add column defintion");
         grid.addColumn(new ItemSpec(1, "star"));
       }
+      
+      let columns = grid.getColumns();
+      console.log("grid-column counts: " + columns.length);
     }
 }
 
@@ -38,11 +41,14 @@ export class AutoGridRows {
       let grid : GridLayout = this.gridRef.nativeElement;
      
       grid.removeRows();
-
+      
       for(let i =0; i<value; i++){
         console.log("add row defintion");
         grid.addRow(new ItemSpec(1, "star"));
       }
+      
+      let rows = grid.getRows();
+      console.log("grid-row count: " + rows.length);
     }
 }
 

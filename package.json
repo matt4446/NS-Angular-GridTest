@@ -1,5 +1,5 @@
 {
-	"name": "Grid Test",
+	"name": "GridTest",
 	"version": "1.0.0",
 	"description": "A NativeScript-built iOS and Android app for managing grocery lists",
 	"repository": {
@@ -25,9 +25,16 @@
 		}
 	},
 	"dependencies": {
-		"angular2": "2.0.0-beta.14",
-		"nativescript-angular": "0.0.45",
-		"tns-core-modules": "2.0.0"
+		"@angular/common": "0.0.0-0",
+		"@angular/compiler": "0.0.0-0",
+		"@angular/core": "0.0.0-0",
+		"@angular/router": "0.0.0-0",
+		"@angular/platform-browser": "0.0.0-0",
+		"@angular/platform-browser-dynamic": "0.0.0-0",
+		"@angular/platform-server": "0.0.0-0",
+		"nativescript-angular": "~0.1.0",
+		"tns-core-modules": "2.0.0",
+		"rxjs": "5.0.0-beta.2"
 	},
 	"devDependencies": {
 		"babel-traverse": "6.8.0",

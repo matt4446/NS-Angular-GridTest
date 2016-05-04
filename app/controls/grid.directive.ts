@@ -1,4 +1,4 @@
-import { Directive, Input, ElementRef } from "angular2/core";
+import { Directive, Input, ElementRef } from "@angular/core";
 import { GridLayout, ItemSpec } from "ui/layouts/grid-layout";
 @Directive({
   selector: "[auto-grid-columns]",
@@ -9,7 +9,7 @@ export class AutoGridColumns {
     @Input("auto-grid-columns")
     public set setDefinition(value: number){
       this.ResetGridColumns(value);
-    };
+    }
     
     public ResetGridColumns(value: number){
       let grid : GridLayout = this.gridRef.nativeElement;

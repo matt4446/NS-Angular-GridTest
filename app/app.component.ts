@@ -1,5 +1,5 @@
 import { AutoGridColumns,AutoGridRows } from "./controls/grid.directive";
-import { Component} from "angular2/core";
+import { Component} from "@angular/core";
 import { Observable, Subscription, Subject } from 'rxjs/Rx';
 @Component({
   selector: "my-app",
@@ -11,9 +11,9 @@ import { Observable, Subscription, Subject } from 'rxjs/Rx';
       <!-- columns ="*,*,* ... n" effectively --> 
       <GridLayout [auto-grid-columns]="autoCreateColumns" 
                   [auto-grid-rows]="autoCreateRows">
-          <template ngFor #row [ngForOf]="rows" #y="index">
-            <template ngFor #col [ngForOf]="cols" #x="index"> 
-              <Label [col]="col" [row]="row" [text]="x + ',' + y"></Label>
+          <template ngFor let-row [ngForOf]="rows" let-y="index">
+            <template ngFor let-col [ngForOf]="cols" let-x="index"> 
+              <Label [col]="col" [row]="row" text="x"></Label>
             </template>
           </template>
       </GridLayout>
